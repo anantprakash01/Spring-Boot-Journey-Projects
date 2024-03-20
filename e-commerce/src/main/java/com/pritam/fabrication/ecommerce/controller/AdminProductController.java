@@ -26,11 +26,6 @@ public class AdminProductController {
 
 	@Autowired
 	private ProductService productService;
-
-	public AdminProductController(ProductService productService) {
-		super();
-		this.productService = productService;
-	}
 	
 	
 	@PostMapping("/")
