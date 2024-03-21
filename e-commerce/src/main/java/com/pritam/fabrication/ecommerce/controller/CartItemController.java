@@ -34,7 +34,7 @@ public class CartItemController {
 	
 	
 	
-	@DeleteMapping("/{cartItem}")
+	@DeleteMapping("/{cartItemId}")
 	public ResponseEntity<ApiResponse> deleteCartItemHandler(@PathVariable Long cartItemId, @RequestHeader("Authorization")String jwt)
 	throws CartItemException, UserException{
 		
