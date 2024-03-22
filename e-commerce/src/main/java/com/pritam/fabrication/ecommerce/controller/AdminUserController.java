@@ -25,6 +25,7 @@ public class AdminUserController {
 	public ResponseEntity<List<User>>getAllUsers(@RequestHeader("Authorization")String jwt){
 		System.out.println("/api/users/profile");
 		List<User>user = userService.findAllUsers();
+		System.out.println(user);
 		return new ResponseEntity<List<User>>(user,HttpStatus.ACCEPTED);
 	}
 }

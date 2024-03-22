@@ -12,7 +12,7 @@ public class HomeController {
 
 	@GetMapping("/")
 	public ResponseEntity<ApiResponse>homeController(){
-		ApiResponse res = new ApiResponse("Welcome To the Pritam Fabrication", true);
+		ApiResponse res = new ApiResponse("Welcome to Pritam Fabrication - your one-stop shop for high-quality iron, aluminum, and steel household items. Discover a wide range of durable and stylish products to enhance your home's functionality and aesthetic appeal. Welcome to convenience and quality - welcome to Pritam Fabrication!", true);
 		
 		return new ResponseEntity<>(res,HttpStatus.OK);
 	}
